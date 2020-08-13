@@ -1,0 +1,89 @@
+body{
+    background: #ff7060;
+   
+    
+}
+
+*{
+    outline: none;
+}
+
+
+.calculator button {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size:10px ;
+    border: 10 solid #f8f8f8;
+    border-radius: 100%;
+    border-width: 0;
+    margin: auto;
+    -webkit-box-shadow: 9px 8px 13px 1px rgba(0,0,0,0.09); 
+box-shadow: 9px 8px 13px 1px rgba(0,0,0,0.09);
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fafafa;
+    color: rgb(114, 114, 114);
+}
+.calculator button:active {
+    -webkit-box-shadow: inset 5px 5px 8px -1px rgba(0,0,0,0.19); 
+    box-shadow: inset 5px 5px 8px -1px rgba(0,0,0,0.19);
+    color: #ffffff;
+    text-shadow: #ffffff 0px 0px 5px, #ffffff 0px 0px 10px, #ffffff 0px 0px 15px, -40px -39px 20px rgba(255,39,179,0);
+}
+.calculator button:hover {
+    color: #1da1f2;
+        text-shadow:  #1da1f2 0px 0px 5px, #1da1f2 0px 0px 10px, #1da1f2 px -0px 15px, -40px -39px 20px rgba(255,39,179,0);
+}
+
+
+.calculator #zeroButton {
+    width: 140px;
+    border-radius:27px;
+}
+
+
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#fafafa;
+    width: 340px;
+    height: 600px;
+    align-items: center;
+    margin-left: auto;  
+    margin-right:auto ;
+    margin-top:20px;
+    margin-bottom:auto ;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.13); 
+    box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.13);
+}
+.calculator input{
+    margin-top:10px ;
+    width: 305px;
+    height: 76px;
+    background-color:#fafafa;
+    border-width: 0;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-right: 0px;
+}
+
+@keyframes calcButtonTxtAnimation{
+    
+    100%{
+        color: #1da1f2;
+        text-shadow:  #1da1f2 0px 0px 5px, #1da1f2 0px 0px 10px, #1da1f2 px -0px 15px, -40px -39px 20px rgba(255,39,179,0);
+    }     
+}
+.calculator .calcValues{
+    position: absolute;
+    font-size: 15px;
+    margin-top: auto;
+    top: 55px;
+    background: none !important;
+
+  
+}
